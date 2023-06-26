@@ -39,6 +39,10 @@ const routes: Routes = [
         path: 'rrhh',
         component: RrhhComponent,
       },
+      {
+        path: '**',
+        component: InicioComponent,
+      },
     ],
   },
 ];

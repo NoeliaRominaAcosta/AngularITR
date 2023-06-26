@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthRoutingModule } from './auth';
+
 
 const routes: Routes = [
-  //rutas madres 
+  //rutas madres
   {
-  path : 'auth',
-  loadChildren : () => import('./auth').then(m=> AuthRoutingModule)
+    path: 'auth',
+    loadChildren: () => import('./auth').then((m) => m.AuthRoutingModule),
   },
   {
     path: 'itr',
-    loadChildren : () => import('./itr').then( m => m.ItrRoutingModule)
+    loadChildren: () => import('./itr').then((m) => m.ItrRoutingModule),
   }
 ];
 

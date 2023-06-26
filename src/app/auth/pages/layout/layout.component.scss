@@ -1,0 +1,16 @@
+#container{
+    background-image: url('https://wallpaperset.com/w/full/e/7/f/16452.jpg');
+    .card{
+       border: none;
+       background: rgb(174,224,238);
+background: linear-gradient(135deg, rgba(174,224,238,1) 0%, rgba(180,138,217,1) 64%);
+    }
+}
+.card-body {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    justify-content: center;
+}

@@ -20,6 +20,10 @@ const routes: Routes = [
         path: 'layout',
         component: LayoutComponent,
       },
+      {
+        path: '**',
+        component: LoginComponent,
+      },
     ],
   },
 ];

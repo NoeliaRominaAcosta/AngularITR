@@ -14,6 +14,8 @@ import { CoachComponent } from './itr/pages/coach/coach.component';
 import { RrhhComponent } from './itr/pages/rrhh/rrhh.component';
 import { DepartamentoComponent } from './itr/pages/departamento/departamento.component';
 import { RecursoComponent } from './itr/pages/recurso/recurso.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material/material.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { RecursoComponent } from './itr/pages/recurso/recurso.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
