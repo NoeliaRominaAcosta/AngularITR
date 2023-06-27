@@ -11,6 +11,11 @@ const routes: Routes = [
   {
     path: 'itr',
     loadChildren: () => import('./itr').then((m) => m.ItrRoutingModule),
+  },
+  {
+    path:'',
+    redirectTo : 'auth',
+    pathMatch : 'full'
   }
 ];
 
