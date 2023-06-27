@@ -5,9 +5,16 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item [routerLink]="['/itr/asignador']" routerLinkActive="router-link-active">Asignador</a>
+      <a mat-list-item [routerLink]="['/itr/coach']" routerLinkActive="router-link-active">Coach</a>
+      <a mat-list-item [routerLink]="['/itr/departamento']" routerLinkActive="router-link-active">Departamento</a>
+      <a mat-list-item [routerLink]="['/itr/entrevistador']" routerLinkActive="router-link-active">Entrevistador</a>
+      <a mat-list-item [routerLink]="['/itr/recurso']" routerLinkActive="router-link-active">Recurso</a>
+      <a mat-list-item [routerLink]="['/itr/rrhh']" routerLinkActive="router-link-active">RRHH</a>
+      <a mat-list-item [routerLink]="['/itr/oportunidad']" routerLinkActive="router-link-active">Oportunidades</a>
+      <a mat-list-item [routerLink]="['/itr/skills']" routerLinkActive="router-link-active">Skills</a>
+
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

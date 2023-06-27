@@ -20,6 +20,7 @@ import { MaterialModule } from './material/material/material.module';
 //standalone components
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SkillsComponent } from './itr/pages/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     RrhhComponent,
     DepartamentoComponent,
     RecursoComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

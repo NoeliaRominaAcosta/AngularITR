@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsignadorComponent, CoachComponent, DepartamentoComponent, EntrevistadorComponent, InicioComponent, LayoutPageComponent, RecursoComponent, RrhhComponent } from '../pages';
+import { OportunidadesComponent } from '../pages/oportunidades/oportunidades.component';
+import { SkillsComponent } from '../pages/skills/skills.component';
 
 const routes: Routes = [
   {
@@ -42,6 +44,14 @@ const routes: Routes = [
       {
         path: '**',
         component: InicioComponent,
+      },
+      {
+        path: 'oportunidad',
+        component: OportunidadesComponent,
+      },
+      {
+        path: 'skills',
+        component: SkillsComponent,
       },
     ],
   },

@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { DashboardComponent } from "../dashboard/dashboard.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
@@ -22,7 +23,8 @@ import { DashboardComponent } from "../dashboard/dashboard.component";
         MatListModule,
         MatIconModule,
         CommonModule,
-        DashboardComponent
+        DashboardComponent,
+        RouterLink
     ]
 })
 export class NavbarComponent {
